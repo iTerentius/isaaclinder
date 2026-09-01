@@ -1,21 +1,23 @@
-import { Routes, Route, Link } from 'react-router'
+import { Routes, Route, Link, NavLink } from 'react-router'
 import Home from './pages/Home'
-// import About from './pages/About'
+import About from './pages/About'
 // import Work from './pages/Work'
 // import Contact from './pages/Contact'
 
 function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        {/* <Link to="/about">About</Link> */}
-        {/* <Link to="/work">Work</Link> */}
-        {/* <Link to="/contact">Contact</Link> */}
-      </nav>
+      <header className="ml-20 pt-4 pr-4 pb-4 sticky">
+        <nav className="font-semibold p-3">
+          <NavLink to="/">{"{"} Isaac Linder {"}"}</NavLink>
+          <NavLink to="/about">+ About</NavLink>
+          {/* <Link to="/work">Work</Link> */}
+          {/* <Link to="/contact">Contact</Link> */}
+        </nav>
+      </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         {/* <Route path="/work" element={<Work />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
