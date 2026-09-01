@@ -1,4 +1,5 @@
 import { Routes, Route, Link, NavLink } from 'react-router'
+import NavItem from './components/NavItem'
 import Home from './pages/Home'
 import About from './pages/About'
 // import Work from './pages/Work'
@@ -9,8 +10,8 @@ function App() {
     <>
       <header className="ml-20 pt-4 pr-4 pb-4 sticky">
         <nav className="font-semibold p-3">
-          <NavLink to="/">{"{"} Isaac Linder {"}"}</NavLink>
-          <NavLink to="/about">+ About</NavLink>
+          <NavItem to="/">{"{"} Isaac Linder {"}"}</NavItem>
+          <NavItem to="/about">+ About</NavItem>
           {/* <Link to="/work">Work</Link> */}
           {/* <Link to="/contact">Contact</Link> */}
         </nav>

@@ -11,7 +11,9 @@
     @apply bg-amber-300 text-gray-900;
   }
   body {
-    @apply antialiased;
+    @apply 
+    antialiased 
+    /* bg-[url('images/il-2026.png')] mix-blend-darker bg-cover bg-center bg-no-repeat bg-fixed;; */
   }
   section {
     @apply pl-20 pr-20 pb-20;
