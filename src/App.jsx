@@ -1,4 +1,4 @@
-import { Routes, Route, Link, NavLink } from 'react-router'
+import { useLocation, Routes, Route, Link, NavLink } from 'react-router'
 import NavItem from './components/NavItem'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -6,6 +6,7 @@ import About from './pages/About'
 // import Contact from './pages/Contact'
 
 function App() {
+  const location = useLocation();
   return (
     <>
       <header className="ml-20 pt-4 pr-4 pb-4 sticky">
@@ -16,12 +17,13 @@ function App() {
           {/* <Link to="/contact">Contact</Link> */}
         </nav>
       </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* <Route path="/work" element={<Work />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
+      <main key={location.pathname} className="animate-fade-in">
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* ... */}
+        </Routes>
+      </main>
     </>
   )
 }

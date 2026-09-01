@@ -7,8 +7,8 @@ function NavItem({ to, children }) {
       to={to}
       className={({ isActive }) =>
         clsx(
-          'px-4 py-2 font-display',
-          isActive ? 'text-brand font-bold' : 'text-gray-600'
+          'px-4 first:pl-0 py-2 font-display',
+          isActive ? 'text-brand font-bold' : 'text-gray-900'
         )
       }
     >

@@ -1,8 +1,10 @@
 import { Link } from "react-router";
+import NavItem from "../components/NavItem";
 import ilphoto from "../assets/il-2026.png"
+import CTA from "../components/CTA";
 export default function Home() {
   return(
-    <section>
+    <section className="ml-60 mt-30 mr-40">
       <img
         src={ilphoto}
         alt=""
@@ -20,11 +22,11 @@ export default function Home() {
           opacity-60
         "
       />
-      <h1 className="font-sans text-5xl font-bold">Frontend Engineer who takes platforms from purely functional to <span className="underline">genuinely good.</span></h1>
-      <h3 className="text-2xl mt-6">React · Design Systems · Performance · 20+ years across code and design</h3>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
+      <h1 className="font-sans leading-[1.2] text-5xl font-bold">Frontend Engineer who takes platforms from purely functional to <span className="underline text-brand">genuinely good.</span></h1>
+      <div className="max-w-3/4">
+        <p className="text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design</p>
+        <CTA label="See my work ->" loc="/about" />
+      </div>
       {/* <img className="mix-blend-darken" src={ilphoto} /> */}
     </section>
   );
