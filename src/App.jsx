@@ -1,30 +1,33 @@
-import { useLocation, Routes, Route, Link, NavLink } from 'react-router'
+import { useLocation, Routes, Route  } from 'react-router'
 import NavItem from './components/NavItem'
 import Home from './pages/Home'
 import About from './pages/About'
+import Work from './pages/Work'
+import Footer from './components/Footer';
 // import Work from './pages/Work'
 // import Contact from './pages/Contact'
 
 function App() {
   const location = useLocation();
   return (
-    <>
-      <header className="ml-20 pt-4 pr-4 pb-4 sticky">
+    <div className="min-h-screen flex flex-col">
+      <header className="p-4 md:pl-50 sticky">
         <nav className="font-semibold p-3">
           <NavItem to="/">{"{"} Isaac Linder {"}"}</NavItem>
           <NavItem to="/about">+ About</NavItem>
-          {/* <Link to="/work">Work</Link> */}
+          <NavItem to="/work">+ Work</NavItem>
           {/* <Link to="/contact">Contact</Link> */}
         </nav>
       </header>
-      <main key={location.pathname} className="animate-fade-in">
+      <main key={location.pathname} className="flex-1 animate-fade-in">
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* ... */}
+          <Route path="/work" element={<Work />} />
         </Routes>
       </main>
-    </>
+      <Footer />
+    </div>
   )
 }
 
