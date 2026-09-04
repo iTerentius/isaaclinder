@@ -3,7 +3,7 @@ import CTA from "../components/CTA";
 import SkillTags from "../components/SkillTags";
 export default function Home() {
   return(
-    <section className="mt-10 md:mt-15 mr-0 md:mr-30 md:ml-30">
+    <section className="mt-10 md:mt-25 mr-0 md:mr-30 md:ml-30">
       <img
         src={ilphoto}
         alt=""
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex items-start flex-col">
         <p className="text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design</p>
         <SkillTags className="mt-2" version="dev" direction="inline"/>
-        <CTA label="See my work >" loc="/work" />
+        <CTA className="mt-10" label="See my work >" loc="/work" />
       </div>
     </section>
   );

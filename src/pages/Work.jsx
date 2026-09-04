@@ -10,7 +10,7 @@ import styleGuide from "../assets/case-studies/AM-Style-Guide-Reference.pdf"
 import bg_wrench from "../assets/bg-wrench-a.png"
 export default function Work(){
   return(
-    <div className="max-w-7/8 space-y-6k">
+    <div className="space-y-6k">
       <img
         src={bg_wrench}
         alt=""

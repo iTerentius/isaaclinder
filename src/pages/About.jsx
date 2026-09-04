@@ -4,7 +4,7 @@ import MarkedItem from "../components/MarkedItem"
 import SkillTags from "../components/SkillTags";
 export default function About() {
   return(
-    <section className="ml-60 mt-30 mr-40 text-xl ">
+    <section className="ml-30 mt-30 text-xl ">
       <img
         src={ilphoto}
         alt=""
