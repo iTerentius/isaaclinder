@@ -21,11 +21,11 @@ export default function Home() {
           opacity-60
         "
       />
-      <h1 className="font-sans leading-[1.2] text-5xl font-bold">Frontend Engineer who takes platforms from purely functional to <span className="underline text-brand">genuinely good.</span></h1>
+      <h1 className="font-sans leading-[1.2] text-5xl font-bold">Frontend Engineer who takes platforms built to work, and makes them work <span className="underline text-brand">beautifully.</span></h1>
       <div className="flex items-start flex-col">
         <p className="text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design</p>
         <SkillTags className="mt-2" version="dev" direction="inline"/>
-        <CTA label="See my work >" loc="/about" />
+        <CTA label="See my work >" loc="/work" />
       </div>
     </section>
   );

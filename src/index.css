@@ -5,7 +5,7 @@
   --color-brand-light: oklch(90.1% 0.076 70.697);
   --font-serif: "Merriweather", serif;
   --font-sans: "Merriweather Sans", sans-serif;
-  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-fade-in: fade-in 0.3s ease-out backwards;
 
   @keyframes fade-in {
     from { opacity: 0; }

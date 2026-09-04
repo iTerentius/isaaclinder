@@ -1,5 +1,5 @@
 import { cn } from "../lib/cn";
-export default function SkillTags({version="dev", direction="inline", className}) {
+export default function SkillTags({version="dev", direction="inline", className, children}) {
   const skills = {
     "dev": [
       "React",
@@ -25,10 +25,12 @@ export default function SkillTags({version="dev", direction="inline", className}
   }
   const formattedSkills = buildSkills(version);
   return (
-    <div className={cn('text-sm mt-10 flex gap-2 items-baseline', className)}>
-      <p className="font-bold">Skills: </p>
-      {formattedSkills}
-    </div>
-
+    <>
+      <div className={cn('text-sm mt-10 flex gap-2 items-baseline', className)}>
+        <p className="font-bold">Skills: </p>
+        {formattedSkills}
+      </div>
+      {children}
+    </>
   )
 }
