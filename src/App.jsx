@@ -30,8 +30,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="p-4 md:pl-40 sticky">
-        <nav className="font-semibold p-3">
-          <NavItem to="/">{"{"} Isaac Linder {"}"}</NavItem>
+        <nav className="font-semibold md:p-3">
+          <NavItem className="block md:inline" to="/">{"{"} Isaac Linder {"}"}</NavItem>
           <NavItem to="/about">+ About</NavItem>
           <NavItem to="/work">+ Work</NavItem>
           <button className={cn("text-gray-900 px-4 font-bold", contactOpen && "text-[#c29613]")}

@@ -22,7 +22,7 @@
     /* bg-[url('images/il-2026.png')] mix-blend-darker bg-cover bg-center bg-no-repeat bg-fixed;; */
   }
   section {
-    @apply pl-20 pr-20 pb-20;
+    @apply pl-6 pr-6 pb-10 md:pl-20 md:pr-20 md:pb-20;
   }
   p {
     @apply pb-2;

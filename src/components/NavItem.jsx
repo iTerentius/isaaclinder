@@ -1,14 +1,15 @@
 import { NavLink } from 'react-router'
-import clsx from 'clsx'
+import {cn } from '../lib/cn.js'
 
-function NavItem({ to, children }) {
+function NavItem({ to, children, className }) {
   return (
     <NavLink
       to={to}
       className={({ isActive }) =>
-        clsx(
+        cn(
           'px-4 first:pl-0 py-2 font-display',
-          isActive ? 'text-brand font-bold' : 'text-gray-900'
+          isActive ? 'text-brand font-bold' : 'text-gray-900',
+          className
         )
       }
     >

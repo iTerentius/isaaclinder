@@ -8,22 +8,25 @@ export default function Home() {
         src={ilphoto}
         alt=""
         className="
-          absolute 
-          -left-100  
-          top-0 
-          h-auto 
-          w-300 
-          object-cover 
-          mix-blend-darken 
-          pointer-events-none 
-          select-none 
+          md:block
+          absolute
+          left-0
+          md:-left-100
+          bottom-30
+          md:top-0
+          h-auto
+          w-300
+          object-cover
+          mix-blend-darken
+          pointer-events-none
+          select-none
           -z-10
           opacity-60
         "
       />
-      <h1 className="font-sans leading-[1.2] text-5xl font-bold">Frontend Engineer who takes platforms built to work, and makes them work <span className="underline text-brand">beautifully.</span></h1>
+      <h1 className="font-sans leading-[1.2] text-4xl md:text-5xl font-bold">Frontend Engineer who takes platforms built to work, and makes them work <span className="underline text-brand">beautifully.</span></h1>
       <div className="flex items-start flex-col">
-        <p className="text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design</p>
+        <p className="text-lg md:text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design</p>
         <SkillTags className="mt-2" version="dev" direction="inline"/>
         <CTA className="mt-10" label="See my work >" loc="/work" />
       </div>
