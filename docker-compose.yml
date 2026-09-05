@@ -1,0 +1,7 @@
+services:
+  web:
+    image: ghcr.io/iterentius/isaaclinder:latest
+    container_name: isaaclinder-com
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3001:80"
