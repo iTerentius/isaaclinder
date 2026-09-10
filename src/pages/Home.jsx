@@ -26,7 +26,7 @@ export default function Home() {
       />
       <h1 className="font-sans leading-[1.2] text-4xl md:text-5xl font-bold">Frontend Engineer who takes platforms built to work, and makes them work <span className="underline text-brand">beautifully.</span></h1>
       <div className="flex items-start flex-col">
-        <p className="text-lg md:text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design from concept to production</p>
+        <p className="text-lg md:text-2xl mt-6 font-extralight">React · Design Systems · Performance · 20+ years across code and design — from concept to production</p>
         <SkillTags className="mt-2" version="dev" direction="inline"/>
         <CTA className="mt-10" label="See my work >" loc="/work" />
       </div>
