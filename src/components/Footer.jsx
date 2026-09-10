@@ -1,3 +1,5 @@
+import resume from "../assets/resume/Isaac-Linder-Resume.pdf";
+
 export default function Footer() {
   return (
     <footer className="bg-red-950/10 py-10 text-sm text-brand text-center">
@@ -9,7 +11,7 @@ export default function Footer() {
           <a href="mailto:isaac@terenti.us" target="_blank" className="underline">Email</a> +{' '}
           <a href="https://linkedin.com/in/isaactlinder" target="_blank" className="underline">LinkedIn</a> +{' '}
           <a href="https://github.com/iTerentius" target="_blank" className="underline">GitHub</a> +{' '}
-          <a href="images/Isaac-Linder-Resume-2026.pdf" target="_blank" className="underline">Resume</a>
+          <a href={resume} target="_blank" className="underline">Resume</a>
         </span>
       </p>
     </footer>

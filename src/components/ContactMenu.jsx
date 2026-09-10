@@ -1,4 +1,5 @@
 import { cn } from "../lib/cn"
+import resume from "../assets/resume/Isaac-Linder-Resume.pdf"
 
 export default function ContactMenu({ className }){
   return(
@@ -12,7 +13,7 @@ export default function ContactMenu({ className }){
             <a href="mailto:isaac@terenti.us" target="_blank" className="underline">Email</a> +{' '}
             <a href="https://linkedin.com/in/isaactlinder" target="_blank" className="underline">LinkedIn</a> +{' '}
             <a href="https://github.com/iTerentius" target="_blank" className="underline">GitHub</a> +{' '}
-            <a href="images/Isaac-Linder-Resume-2026.pdf" target="_blank" className="underline">Resume</a>
+            <a href={resume} target="_blank" className="underline">Resume</a>
           </span>
         </div>
       </div>
