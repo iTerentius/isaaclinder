@@ -34,7 +34,7 @@ function App() {
           <NavItem className="block md:inline" to="/">{"{"} Isaac Linder {"}"}</NavItem>
           <NavItem to="/about">+ About</NavItem>
           <NavItem to="/work">+ Work</NavItem>
-          <button className={cn("text-gray-900 px-4 font-bold", contactOpen && "text-[#c29613]")}
+          <button className={cn("text-gray-800 px-4 font-bold", contactOpen && "text-[#c29613]")}
             onClick={toggleContactMenu}
             onBlur={() => setContactOpen(false)}
           >+ Contact Info</button>
