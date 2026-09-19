@@ -33,6 +33,7 @@ export default function Work(){
 
       <section className="mt-10 md:mt-30 md:ml-30 mr-0 md:mr-40 space-y-5">
         <h1 className="text-3xl md:text-5xl text-brand font-bold mb-8">Work examples</h1>
+        <h2 className="text-2xl md:text-3xl text-gray-800 font-bold mb-8">React.js</h2>
         <CaseStudy 
           title="Led a full legacy-to-modern React rebuild of a production platform, shipped incrementally with zero downtime."
         >

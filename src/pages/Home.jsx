@@ -21,7 +21,7 @@ export default function Home() {
           pointer-events-none
           select-none
           -z-10
-          opacity-60
+          opacity-20
         "
       />
       <h1 className="font-sans leading-[1.2] text-4xl md:text-5xl font-bold">Frontend Engineer who takes platforms built to work, and makes them work <span className="underline text-brand">beautifully.</span></h1>

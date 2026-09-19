@@ -21,7 +21,7 @@ export default function About() {
           pointer-events-none
           select-none
           -z-10
-          opacity-40
+          opacity-30
         "
       />
       <div className="max-w-full md:max-w-3/4 space-y-6 font-extralight">
@@ -29,8 +29,8 @@ export default function About() {
         <ul className="space-y-6 list-inside">
           <MarkedItem>I've spent the last 20 years moving between code and design — sometimes leading with one, sometimes the other, usually doing both at once.</MarkedItem> 
           <MarkedItem>Most recently, I spent 4+ years as the frontend owner of AudienceMaker, a data-audience platform built by a genuinely strong engineering team with a deep focus on capability. My job was making all that power feel as good to use as it is to have — modernizing the React architecture, building a design system from scratch, and shipping integrations under real deadlines.</MarkedItem>
-          <MarkedItem>Before that, I spent 21 years at a health-marketing company doing everything from interactive 3D medical software to full digital campaigns — the kind of long tenure that teaches you a system end-to-end rather than just your one corner of it.</MarkedItem>
-          <MarkedItem>Outside of work, I write generative music code in SuperCollider and tinker with my dev environment more than is probably necessary.</MarkedItem>
+          <MarkedItem>Prior to that, I spent 21 years at a health-software company designing and engineering solutions such as health risk assessments, pharma-economic calculators, and 3D animated medical tutorials for some of the largest healthcare and pharmaceutical companies in the world.<br /><br />Along with that I created and managed the custom corporate Worpress website, marketing landing pages and full digital campaign automation with Pardot/Salesforce. The kind of long tenure that teaches you a system end-to-end rather than just your one corner of it.</MarkedItem>
+          <MarkedItem>Outside of work, I like to play guitar and bass as well as write generative music code in Supercollider and tinker with my dev environment more than is probably necessary.</MarkedItem>
         </ul>
         <div className="mt-4 ml-5">
           <SkillTags className="mt-2" version="dev" direction="block">
