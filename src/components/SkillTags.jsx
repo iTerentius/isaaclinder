@@ -7,11 +7,12 @@ export default function SkillTags({version="dev", direction="inline", className,
     "dev": [
       "React",
       "JavaScript",
-      "Adobe/Figma & Design Systems",
       "Performance Optimization",
       "WordPress/PHP",
       "SQL",
-      "REST/API Integration"
+      "REST/API Integration",
+      "Adobe/Figma & Design Systems",
+      "Rive (data-bound animation)"
     ]
   }
   const buildSkills = (version) => {
