@@ -2,7 +2,7 @@ import resume from "../assets/resume/Isaac-Linder-Resume.pdf";
 
 export default function Footer() {
   return (
-    <footer className="bg-red-950/10 py-10 text-sm text-brand text-center">
+    <footer className="bg-amber-400/20 py-10 text-sm text-brand text-center">
       <p className="flex flex-col gap-2">
         <span className="text-red-800 font-extrabold">
           Open to Frontend Developer / Frontend Engineer roles.

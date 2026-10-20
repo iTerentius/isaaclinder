@@ -7,7 +7,7 @@ import csDiagram2_1 from "../assets/case-studies/census_sync_flow.svg"
 import csDiagram3_1 from "../assets/case-studies/AM-Style-Guide-thumb.png";
 import csDiagram4_1 from "../assets/case-studies/explorer_performance_before_after.svg";
 import styleGuide from "../assets/case-studies/AM-Style-Guide-Reference.pdf"
-import bg_wrench from "../assets/bg-wrench-a.png"
+import bg_wrench from "../assets/bg-work.png"
 export default function Work(){
   return(
     <div className="space-y-6k">
@@ -18,16 +18,15 @@ export default function Work(){
           hidden
           md:block
           absolute
-          -left-40
-          -top-10
+          -left-100
+          -top-30
           h-auto
-          w-120
+          w-240
           object-cover
-          mix-blend-darken
           pointer-events-none
           select-none
           -z-10
-          opacity-20
+          opacity-40
         "
       />
 

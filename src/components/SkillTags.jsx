@@ -5,8 +5,9 @@ export default function SkillTags({version="dev", direction="inline", className,
   const isMobile = useMediaQuery('(max-width: 767px)'); 
   const skills = {
     "dev": [
-      "React",
+      "React", "Vue",
       "JavaScript",
+      "TypeScript",
       "Performance Optimization",
       "WordPress/PHP",
       "SQL",
